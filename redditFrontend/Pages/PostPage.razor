@@ -49,6 +49,11 @@ else
             }
         </table>
     }
+    
+    <h4>Tilføj en kommentar:</h4>
+    <input type="text" @bind="newCommentAuthor" placeholder="Dit navn" />
+    <textarea @bind="newCommentText" placeholder="Skriv noget sindsygt!"></textarea>
+    <button @onclick="AddComment">Tilføj kommentar</button>
 }
 
 @code {
@@ -60,6 +65,12 @@ else
     protected override async Task OnInitializedAsync()
     {
         specificPost = await Http.GetFromJsonAsync<Post>($"http://localhost:5064/api/posts/{id}");
+        if (specificPost != null)
+        {
+            specificPost.Comments = specificPost.Comments
+                .OrderByDescending(c => c.CommentPublishDate)
+                .ToList();
+        }
     }
     
     public class Post
@@ -85,6 +96,9 @@ else
         public int PostId { get; set; }
         public Post? Post { get; set; }
     }
+
+    private string newCommentAuthor = string.Empty;
+    private string newCommentText = string.Empty;
 
     // Vi laver vores like system så API kaldet kaldes når man trykker.
     // Får man en success-kode tilbage, altså 200, så opdateres UI så man kan se at der er liket.
@@ -121,6 +135,33 @@ else
         if (response.IsSuccessStatusCode)
         {
             comment.CommentDownvotes++;
+        }
+    }
+
+    private async Task AddComment()
+    {
+        if (string.IsNullOrWhiteSpace(newCommentAuthor) || string.IsNullOrWhiteSpace(newCommentText))
+            return;
+
+        var newComment = new Comment
+        {
+            CommentAuthor = newCommentAuthor,
+            CommentText = newCommentText,
+            PostId = id
+        };
+
+        var response = await Http.PostAsJsonAsync($"http://localhost:5064/api/posts/{id}/comments", newComment);
+
+        if (response.IsSuccessStatusCode)
+        {
+            newCommentAuthor = String.Empty;
+            newCommentText = string.Empty;
+
+            specificPost = await Http.GetFromJsonAsync<Post>($"http://localhost:5064/api/posts/{id}");
+        }
+        else
+        {
+            Console.WriteLine("DIN DUMME KODE VIRKER IKKE LAV DET OM eller sådan der skete hvert fald en fejl hvis du ser det her");
         }
     }
 

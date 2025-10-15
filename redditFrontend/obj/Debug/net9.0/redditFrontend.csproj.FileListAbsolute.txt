@@ -1075,10 +1075,10 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\Hom
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\PostPage.razor.rz.scp.css
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\n7dlmc0ou7-mbhqbjv99p.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\kvzcf0d5mx-mbhqbjv99p.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.4mnzcravh8.wasm
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.lihruqeyk0.pdb
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.4mnzcravh8.wasm.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.lihruqeyk0.pdb.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\bb2abxqtcj-4mnzcravh8.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\5yewxlyzxn-lihruqeyk0.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\cs79pziqdd-98jcfsexc4.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.b5krq6jnkj.wasm
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.9rliyjwlmn.pdb
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.b5krq6jnkj.wasm.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.9rliyjwlmn.pdb.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\bb2abxqtcj-b5krq6jnkj.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\5yewxlyzxn-9rliyjwlmn.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\cs79pziqdd-f51qdzhm3d.gz
