@@ -32,10 +32,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/ita/redditApp/redditFrontend/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/rasmu/ita/redditApp/redditFrontend/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,6 +47,10 @@ build_metadata.AdditionalFiles.CssScope = b-gx85szxtgi
 [C:/Users/rasmu/ita/redditApp/redditFrontend/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ga0u96lgxg
+
+[C:/Users/rasmu/ita/redditApp/redditFrontend/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-z2i60dbbks
 
 [C:/Users/rasmu/ita/redditApp/redditFrontend/Pages/Reddit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkZGl0LnJhem9y

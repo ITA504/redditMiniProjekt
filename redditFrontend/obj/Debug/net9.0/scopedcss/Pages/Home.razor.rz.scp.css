@@ -1,0 +1,23 @@
+table[b-z2i60dbbks] {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+th[b-z2i60dbbks], td[b-z2i60dbbks] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th[b-z2i60dbbks] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even)[b-z2i60dbbks] {
+    background-color: #f9f9f9;
+}
+
+tr:hover[b-z2i60dbbks]

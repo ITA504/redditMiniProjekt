@@ -11,12 +11,21 @@
 }
 else
 {
-    <ul>
+    <table>
+        <tr>
+            <th>Overskrift</th>
+            <th>Forfatter</th>
+            <th>Publiceringsdato</th>
+        </tr>
         @foreach (var post in posts)
         {
-            <li><strong>@post.Title</strong>: @post.Content</li>
+            <tr>
+                <td><strong>@post.Title</strong></td>
+                <td>@post.Author</td>
+                <td>@post.PublishDate</td>
+            </tr>
         }
-    </ul>
+    </table>
 }
 
 
