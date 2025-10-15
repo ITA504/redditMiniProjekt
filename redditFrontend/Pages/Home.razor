@@ -1,0 +1,56 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+<h3>Velkommen på RedDeOvervågerDig</h3>
+
+@if (posts == null)
+{
+    <p>Henter data...</p>
+}
+else
+{
+    <ul>
+        @foreach (var post in posts)
+        {
+            <li><strong>@post.Title</strong>: @post.Content</li>
+        }
+    </ul>
+}
+
+
+@code {
+
+    private List<Post>? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await Http.GetFromJsonAsync<List<Post>>("http://localhost:5064/api/posts");
+    }
+
+    public class Post
+    {
+        public int Id { get; set; }
+        public string? Author { get; set; }
+        public string? Title { get; set; }
+        public string? Content { get; set; }
+        public DateTime PublishDate { get; set; } = DateTime.Now;
+        public List<Comment> Comments { get; set; } = new List<Comment>();
+        public int Upvotes { get; set; } = 0; //Nullet gør at vi starter med nul upvotes
+        public int Downvotes { get; set; } = 0;
+    }
+    
+    public class Comment
+    {
+        public int Id { get; set; }
+        public string? CommentAuthor { get; set; }
+        public string? CommentText { get; set; }
+        public DateTime CommentPublishDate { get; set; } = DateTime.Now;
+        public int CommentUpvotes { get; set; } = 0;
+        public int CommentDownvotes { get; set; } = 0;
+        public int PostId { get; set; }
+        public Post? Post { get; set; }
+    }
+
+}

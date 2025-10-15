@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redditWebAPI", "..\redditWebAPI\redditWebAPI.csproj", "{F2054021-0AD1-49CB-AB0A-9C396D8F6C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redditFrontend", "redditFrontend\redditFrontend.csproj", "{766BE103-78C8-4A2F-8D2C-9F3F71282305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2054021-0AD1-49CB-AB0A-9C396D8F6C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2054021-0AD1-49CB-AB0A-9C396D8F6C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2054021-0AD1-49CB-AB0A-9C396D8F6C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2054021-0AD1-49CB-AB0A-9C396D8F6C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766BE103-78C8-4A2F-8D2C-9F3F71282305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766BE103-78C8-4A2F-8D2C-9F3F71282305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766BE103-78C8-4A2F-8D2C-9F3F71282305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766BE103-78C8-4A2F-8D2C-9F3F71282305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
