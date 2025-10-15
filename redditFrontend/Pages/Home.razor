@@ -14,14 +14,14 @@ else
     <table>
         <tr>
             <th>Overskrift</th>
-            <th>Forfatter</th>
             <th>Publiceringsdato</th>
         </tr>
         @foreach (var post in posts)
         {
             <tr>
-                <td><strong>@post.Title</strong></td>
-                <td>@post.Author</td>
+                <td>
+                    <a href="/postpage/@post.Id">@post.Title</a>
+                </td>
                 <td>@post.PublishDate</td>
             </tr>
         }
@@ -61,5 +61,7 @@ else
         public int PostId { get; set; }
         public Post? Post { get; set; }
     }
+    
+    
 
 }

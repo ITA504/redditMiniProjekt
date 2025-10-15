@@ -1,0 +1,127 @@
+﻿@page "/postpage/{id:int}"
+@inject HttpClient Http
+<h3>PostPage</h3>
+
+@if (specificPost == null)
+{
+    <p>Henter post...</p>
+}
+else
+{
+    <h3>@specificPost.Title</h3>
+    <p>@specificPost.Author</p>
+    <p>@specificPost.PublishDate</p>
+    <p>@specificPost.Content</p>
+    
+    <p>
+        <span @onclick="Upvote" style="cursor:pointer">👍</span> @specificPost.Upvotes |
+        <span @onclick="Downvote" style="cursor:pointer">👎</span> @specificPost.Downvotes
+    </p>
+
+    
+    <h4>Kommentarer:</h4>
+    
+    @if (specificPost.Comments.Count == 0)
+    {
+        <p>Ingen kommentarer endnu min ven.</p>
+    }
+    else
+    {
+        <table>
+            <tr>
+                <th>Forfatter</th>
+                <th>Tidspunkt</th>
+                <th>Kommentar</th>
+                <th>Upvotes</th>
+                <th>Downvotes</th>
+            </tr>
+            @foreach (var comment in specificPost.Comments)
+            {
+                <tr>
+                    <td>@comment.CommentAuthor</td>
+                    <td>@comment.CommentPublishDate</td>
+                    <td>@comment.CommentText</td>
+                    <td>
+                        <span @onclick="() => UpvoteComment(comment)" style="cursor:pointer">👍</span> @comment.CommentUpvotes |
+                        <span @onclick="() => DownvoteComment(comment)" style="cursor:pointer">👎</span> @comment.CommentDownvotes
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+}
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    
+    private Post? specificPost;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        specificPost = await Http.GetFromJsonAsync<Post>($"http://localhost:5064/api/posts/{id}");
+    }
+    
+    public class Post
+    {
+        public int Id { get; set; }
+        public string? Author { get; set; }
+        public string? Title { get; set; }
+        public string? Content { get; set; }
+        public DateTime PublishDate { get; set; } = DateTime.Now;
+        public List<Comment> Comments { get; set; } = new List<Comment>();
+        public int Upvotes { get; set; } = 0; //Nullet gør at vi starter med nul upvotes
+        public int Downvotes { get; set; } = 0;
+    }
+    
+    public class Comment
+    {
+        public int Id { get; set; }
+        public string? CommentAuthor { get; set; }
+        public string? CommentText { get; set; }
+        public DateTime CommentPublishDate { get; set; } = DateTime.Now;
+        public int CommentUpvotes { get; set; } = 0;
+        public int CommentDownvotes { get; set; } = 0;
+        public int PostId { get; set; }
+        public Post? Post { get; set; }
+    }
+
+    // Vi laver vores like system så API kaldet kaldes når man trykker.
+    // Får man en success-kode tilbage, altså 200, så opdateres UI så man kan se at der er liket.
+    private async Task Upvote()
+    {
+        var response = await Http.PutAsync($"http://localhost:5064/api/posts/{id}/upvote", null);
+        if (response.IsSuccessStatusCode)
+        {
+            specificPost.Upvotes++;
+        }
+    }
+    
+    private async Task Downvote()
+    {
+        var response = await Http.PutAsync($"http://localhost:5064/api/posts/{id}/downvote", null);
+        if (response.IsSuccessStatusCode)
+        {
+            specificPost.Downvotes++;
+        }
+    }
+    
+    private async Task UpvoteComment(Comment comment)
+    {
+        var response = await Http.PutAsync($"http://localhost:5064/api/posts/{id}/comments/{comment.Id}/upvote", null);
+        if (response.IsSuccessStatusCode)
+        {
+            comment.CommentUpvotes++;
+        }
+    }
+    
+    private async Task DownvoteComment(Comment comment)
+    {
+        var response = await Http.PutAsync($"http://localhost:5064/api/posts/{id}/comments/{comment.Id}/downvote", null);
+        if (response.IsSuccessStatusCode)
+        {
+            comment.CommentDownvotes++;
+        }
+    }
+
+}

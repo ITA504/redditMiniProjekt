@@ -184,4 +184,27 @@ tr:nth-child(even)[b-z2i60dbbks] {
 }
 
 tr:hover[b-z2i60dbbks]
-/* /Pages/Reddit.razor.rz.scp.css */
+/* /Pages/PostPage.razor.rz.scp.css */
+table[b-l88pge3v45] {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+th[b-l88pge3v45], td[b-l88pge3v45] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th[b-l88pge3v45] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even)[b-l88pge3v45] {
+    background-color: #f9f9f9;
+}
+
+tr:hover[b-l88pge3v45]
