@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "redditFrontend",
   "resources": {
-    "hash": "sha256-a3XiBQzmeyC5vMdDknYU2KHZrYLESDDs3BP7BbVHG+o=",
+    "hash": "sha256-ROi+bzwb2AOo/pf8lTBIc5eZejMI0oPL2QhTVIYWiwU=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.z6jo10m0rd.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.65wbz7t8mt.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "redditFrontend.b5krq6jnkj.wasm": "redditFrontend.wasm",
-      "redditFrontend.9rliyjwlmn.pdb": "redditFrontend.pdb"
+      "redditFrontend.h3dbwj4vzi.wasm": "redditFrontend.wasm",
+      "redditFrontend.u1rbiwwv9b.pdb": "redditFrontend.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.9ih887ebfz.js": "sha256-oS7IRiQoVt9ThQ7Y2UM3XoeY0JqPD02cg9IvRdufn2w="
@@ -412,10 +412,10 @@
       "WindowsBase.vy2l5u79y6.wasm": "sha256-ufB9Mo5joMyUs3DzXWWBFFIZNEVrt6h9N5stYB6Oln4=",
       "mscorlib.xd6mv31d55.wasm": "sha256-1YSLR2eZt3ceALFV//vZUF2AloxVil3VlrW1zZYPSEI=",
       "netstandard.kaml52uspo.wasm": "sha256-HLEwBpLfzKw2/zGSVzHzFJxznCkt/WIjahrziiMrOpA=",
-      "redditFrontend.b5krq6jnkj.wasm": "sha256-QT+MSc1H4rj6cuYSgqv6kGPJGs18Foi70xlGX72URuo="
+      "redditFrontend.h3dbwj4vzi.wasm": "sha256-DWPnWJc4ve9MCVyVq4mUVLOlpWqw6oyfpFuVknRnnhg="
     },
     "pdb": {
-      "redditFrontend.9rliyjwlmn.pdb": "sha256-W/Oxtyq3XHO6YmaY5fCjexkKT3Ky8mGCN420oNRCd/A="
+      "redditFrontend.u1rbiwwv9b.pdb": "sha256-ThClL8LT19WkzqSL3DN7LG3dnIGZcIkTGNFFWldjN5Q="
     }
   },
   "cacheBootResources": true,

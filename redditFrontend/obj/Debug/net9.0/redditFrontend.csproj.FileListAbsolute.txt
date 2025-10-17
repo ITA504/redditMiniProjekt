@@ -199,6 +199,8 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.h3dbwj4vzi.wasm
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.u1rbiwwv9b.pdb
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.z6jo10m0rd.wasm.gz
@@ -401,6 +403,8 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.h3dbwj4vzi.wasm.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.u1rbiwwv9b.pdb.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\redditFrontend.staticwebassets.runtime.json
 C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\redditFrontend.staticwebassets.endpoints.json
@@ -613,6 +617,7 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.Asse
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.AssemblyInfo.cs
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.csproj.CoreCompileInputs.cache
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.sourcelink.json
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -810,6 +815,8 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\rjsmrazor.dswa.cach
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\Home.razor.rz.scp.css
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\PostPage.razor.rz.scp.css
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\bundle\redditFrontend.styles.css
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\projectbundle\redditFrontend.bundle.scp.css
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\blazor.build.boot-extension.json
@@ -861,6 +868,8 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\fwaeup1n
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\s5gazoc5z2-4d85u1mtcx.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\80a07d01qw-qp0c1ebx22.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\y0pm8krzwc-md9yvkcqlf.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\n7dlmc0ou7-mbhqbjv99p.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\kvzcf0d5mx-mbhqbjv99p.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\rk2n2k70w5-z6jo10m0rd.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\rfa8navnc8-65wbz7t8mt.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\g418e84erw-ysqd97eroy.gz
@@ -1061,6 +1070,9 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\9gt1mc0k
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\ieq5sqwdrk-tjcz0u77k5.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\4zwcox2qr6-tptq2av103.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\h59jge0fqt-lfu7j35m59.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\bb2abxqtcj-h3dbwj4vzi.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\5yewxlyzxn-u1rbiwwv9b.gz
+C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\cs79pziqdd-w8as4v0dhq.gz
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\staticwebassets.development.json
@@ -1070,15 +1082,3 @@ C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.dll
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\refint\redditFrontend.dll
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.pdb
 C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\ref\redditFrontend.dll
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\redditFrontend.sourcelink.json
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\Home.razor.rz.scp.css
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\scopedcss\Pages\PostPage.razor.rz.scp.css
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\n7dlmc0ou7-mbhqbjv99p.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\kvzcf0d5mx-mbhqbjv99p.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.b5krq6jnkj.wasm
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.9rliyjwlmn.pdb
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.b5krq6jnkj.wasm.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\bin\Debug\net9.0\wwwroot\_framework\redditFrontend.9rliyjwlmn.pdb.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\bb2abxqtcj-b5krq6jnkj.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\5yewxlyzxn-9rliyjwlmn.gz
-C:\Users\rasmu\ita\redditApp\redditFrontend\obj\Debug\net9.0\compressed\cs79pziqdd-f51qdzhm3d.gz
