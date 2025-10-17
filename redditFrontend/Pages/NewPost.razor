@@ -1,0 +1,71 @@
+﻿@page "/newpost"
+@inject HttpClient Http
+
+<h3>Tilføj et post:</h3>
+<input type="text" @bind="newPostAuthor" placeholder="Dit navn"/>
+<input type="text" @bind="newPostTitle" placeholder="Titel til dit opslag"/>
+<textarea @bind="newPostContent" placeholder="Del dine tanker her"></textarea>
+<button @onclick="AddPost">Tilføj post</button>
+
+
+@code {
+    
+    public class Post
+    {
+        public int Id { get; set; }
+        public string? Author { get; set; }
+        public string? Title { get; set; }
+        public string? Content { get; set; }
+        public DateTime PublishDate { get; set; } = DateTime.Now;
+        public List<Comment> Comments { get; set; } = new List<Comment>();
+        public int Upvotes { get; set; } = 0; //Nullet gør at vi starter med nul upvotes
+        public int Downvotes { get; set; } = 0;
+    }
+    
+    public class Comment
+    {
+        public int Id { get; set; }
+        public string? CommentAuthor { get; set; }
+        public string? CommentText { get; set; }
+        public DateTime CommentPublishDate { get; set; } = DateTime.Now;
+        public int CommentUpvotes { get; set; } = 0;
+        public int CommentDownvotes { get; set; } = 0;
+        public int PostId { get; set; }
+        public Post? Post { get; set; }
+    }
+
+    private string newPostAuthor = string.Empty;
+    private string newPostTitle = string.Empty;
+    private string newPostContent = string.Empty;
+    
+
+    private async Task AddPost()
+    {
+        if (string.IsNullOrWhiteSpace(newPostAuthor) || string.IsNullOrWhiteSpace(newPostTitle) || string.IsNullOrWhiteSpace(newPostContent))
+            return;
+
+        var newPost = new Post
+        {
+            Author = newPostAuthor,
+            Title = newPostTitle,
+            Content = newPostContent
+        };
+        
+        var response = await Http.PostAsJsonAsync($"http://localhost:5064/api/posts", newPost);
+
+        if (response.IsSuccessStatusCode)
+        {
+            newPostAuthor = string.Empty;
+            newPostTitle = string.Empty;
+            newPostContent = string.Empty;
+        }
+        else
+        {
+            Console.WriteLine("DIN DUMME KODE VIRKER IKKE LAV DET OM eller sådan der skete hvert fald en fejl hvis du ser det her");
+        }
+        
+        
+    }
+    
+    
+}
