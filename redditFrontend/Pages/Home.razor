@@ -3,7 +3,7 @@
 
 <PageTitle>Home</PageTitle>
 
-<h3>Velkommen på RedDeOvervågerDig</h3>
+<h3>Velkommen på Breaddit</h3>
 
 @if (posts == null)
 {
@@ -14,6 +14,7 @@ else
     <table>
         <tr>
             <th>Overskrift</th>
+            <th>Forfatter</th>
             <th>Publiceringsdato</th>
         </tr>
         @foreach (var post in posts)
@@ -22,6 +23,7 @@ else
                 <td>
                     <a href="/postpage/@post.Id">@post.Title</a>
                 </td>
+                <td>@post.Author</td>
                 <td>@post.PublishDate</td>
             </tr>
         }

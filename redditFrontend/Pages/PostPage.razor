@@ -1,6 +1,5 @@
 ﻿@page "/postpage/{id:int}"
 @inject HttpClient Http
-<h3>PostPage</h3>
 
 @if (specificPost == null)
 {
@@ -9,8 +8,8 @@
 else
 {
     <h3>@specificPost.Title</h3>
-    <p>@specificPost.Author</p>
-    <p>@specificPost.PublishDate</p>
+    <p><strong>Forfatter: </strong>@specificPost.Author</p>
+    <p><strong>Publiseringsdato: </strong>@specificPost.PublishDate</p>
     <p>@specificPost.Content</p>
     
     <p>
@@ -32,8 +31,7 @@ else
                 <th>Forfatter</th>
                 <th>Tidspunkt</th>
                 <th>Kommentar</th>
-                <th>Upvotes</th>
-                <th>Downvotes</th>
+                <th>Votes</th>
             </tr>
             @foreach (var comment in specificPost.Comments)
             {

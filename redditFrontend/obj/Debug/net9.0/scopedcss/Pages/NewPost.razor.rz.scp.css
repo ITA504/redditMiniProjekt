@@ -1,0 +1,80 @@
+/* NewPost.razor.css */
+
+/* Grundlæggende layout */
+.page[b-xvd4s7z6w7] {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Titel */
+h3[b-xvd4s7z6w7] {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Input‑felter + textarea */
+input[type="text"][b-xvd4s7z6w7],
+textarea[b-xvd4s7z6w7] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color .2s, box‑shadow .2s;
+}
+
+/* Fokus‑effekt */
+input[type="text"]:focus[b-xvd4s7z6w7],
+textarea:focus[b-xvd4s7z6w7] {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0,102,255,.15);
+}
+
+/* Placeholder‑stil (valgfri) */
+[b-xvd4s7z6w7]::placeholder {
+    color: #999;
+}
+
+/* Knappen */
+button[b-xvd4s7z6w7] {
+    display: block;
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #0066ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+/* Hover / aktiv */
+button:hover[b-xvd4s7z6w7] {
+    background: #0052cc;
+}
+button:active[b-xvd4s7z6w7] {
+    transform: translateY(1px);
+}
+
+/* Responsivt – lidt mindre padding på små skærme */
+@media (max-width: 480px) {
+    .page[b-xvd4s7z6w7] {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h3[b-xvd4s7z6w7] {
+        font-size: 1.4rem;
+    }
+}

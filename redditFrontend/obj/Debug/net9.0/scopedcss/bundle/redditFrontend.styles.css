@@ -161,51 +161,279 @@ main[b-gx85szxtgi] {
     }
 }
 /* /Pages/Home.razor.rz.scp.css */
+/* -------------------------------------------------
+   Home (Index) – oversigt over indlæg
+   ------------------------------------------------- */
+
+/* Overordnet container – centreret “card” */
+.page[b-z2i60dbbks] {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Titel */
+h3[b-z2i60dbbks] {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #222;
+}
+
+/* Loading‑tekst */
+.loading[b-z2i60dbbks] {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Tabel – simpel men elegant */
 table[b-z2i60dbbks] {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    margin-top: .5rem;
 }
-
 th[b-z2i60dbbks], td[b-z2i60dbbks] {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
     text-align: left;
+    vertical-align: top;
 }
-
 th[b-z2i60dbbks] {
-    background-color: #4CAF50;
-    color: white;
+    background: #f0f0f0;
+    font-weight: 600;
+    color: #333;
+}
+td a[b-z2i60dbbks] {
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+td a:hover[b-z2i60dbbks] {
+    text-decoration: underline;
 }
 
-tr:nth-child(even)[b-z2i60dbbks] {
-    background-color: #f9f9f9;
+/* Dato‑format – lille grå tekst */
+.date[b-z2i60dbbks] {
+    font-size: .9rem;
+    color: #777;
 }
 
-tr:hover[b-z2i60dbbks]
+/* Responsivt – lidt mindre padding på små skærme */
+@media (max-width: 480px) {
+    .page[b-z2i60dbbks] {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h3[b-z2i60dbbks] {font-size: 1.5rem;}
+}
 /* /Pages/NewPost.razor.rz.scp.css */
-/* /Pages/PostPage.razor.rz.scp.css */
-table[b-l88pge3v45] {
+/* NewPost.razor.css */
+
+/* Grundlæggende layout */
+.page[b-xvd4s7z6w7] {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Titel */
+h3[b-xvd4s7z6w7] {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Input‑felter + textarea */
+input[type="text"][b-xvd4s7z6w7],
+textarea[b-xvd4s7z6w7] {
     width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-th[b-l88pge3v45], td[b-l88pge3v45] {
-    padding: 12px 15px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ddd;
-    text-align: left;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color .2s, box‑shadow .2s;
 }
 
+/* Fokus‑effekt */
+input[type="text"]:focus[b-xvd4s7z6w7],
+textarea:focus[b-xvd4s7z6w7] {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0,102,255,.15);
+}
+
+/* Placeholder‑stil (valgfri) */
+[b-xvd4s7z6w7]::placeholder {
+    color: #999;
+}
+
+/* Knappen */
+button[b-xvd4s7z6w7] {
+    display: block;
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #0066ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+/* Hover / aktiv */
+button:hover[b-xvd4s7z6w7] {
+    background: #0052cc;
+}
+button:active[b-xvd4s7z6w7] {
+    transform: translateY(1px);
+}
+
+/* Responsivt – lidt mindre padding på små skærme */
+@media (max-width: 480px) {
+    .page[b-xvd4s7z6w7] {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h3[b-xvd4s7z6w7] {
+        font-size: 1.4rem;
+    }
+}
+/* /Pages/PostPage.razor.rz.scp.css */
+/* -------------------------------------------------
+   PostPage – ren, moderne “card”‑layout
+   ------------------------------------------------- */
+
+/* Container – centreret kort med blød skygge */
+.page[b-l88pge3v45] {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background:#fafafa;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+/* Overskrifter */
+h3[b-l88pge3v45], h4[b-l88pge3v45] {
+    margin-top:0;
+    color:#222;
+}
+h3[b-l88pge3v45] {
+    font-size:1.8rem;
+    text-align:center;
+    margin-bottom:1.2rem;
+}
+h4[b-l88pge3v45] {
+    font-size:1.4rem;
+    margin-top:1.6rem;
+    margin-bottom:0.8rem;
+}
+
+/* Post‑detaljer */
+.post-meta[b-l88pge3v45] {
+    color:#555;
+    font-size:.95rem;
+    margin-bottom:1rem;
+}
+.post-content[b-l88pge3v45] {
+    line-height:1.6;
+    margin-bottom:1.5rem;
+}
+
+/* Like‑knapper */
+.vote[b-l88pge3v45] {
+    cursor:pointer;
+    user-select:none;
+    margin-right:.4rem;
+    font-size:1.2rem;
+}
+.vote:hover[b-l88pge3v45] { opacity:.8; }
+
+/* Input‑felter + textarea (kommentar‑formular) */
+input[type="text"][b-l88pge3v45],
+textarea[b-l88pge3v45] {
+    width:100%;
+    padding:.75rem 1rem;
+    margin-bottom:.8rem;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:1rem;
+    background:#fff;
+    transition:border-color .2s,box-shadow .2s;
+}
+input[type="text"]:focus[b-l88pge3v45],
+textarea:focus[b-l88pge3v45] {
+    outline:none;
+    border-color:#0066ff;
+    box-shadow:0 0 0 3px rgba(0,102,255,.15);
+}
+
+/* Kommentar‑knap */
+button[b-l88pge3v45] {
+    display:block;
+    width:100%;
+    padding:.85rem;
+    font-size:1rem;
+    font-weight:600;
+    color:#fff;
+    background:#0066ff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:background .2s,transform .1s;
+}
+button:hover[b-l88pge3v45]   { background:#0052cc; }
+button:active[b-l88pge3v45]  { transform:translateY(1px); }
+
+/* Kommentar‑tabel */
+table[b-l88pge3v45] {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:.5rem;
+}
+th[b-l88pge3v45], td[b-l88pge3v45] {
+    padding:.6rem .8rem;
+    border-bottom:1px solid #e0e0e0;
+    text-align:left;
+    vertical-align:top;
+}
 th[b-l88pge3v45] {
-    background-color: #4CAF50;
-    color: white;
+    background:#f0f0f0;
+    font-weight:600;
+    color:#333;
+}
+td[b-l88pge3v45] {
+    color:#444;
 }
 
-tr:nth-child(even)[b-l88pge3v45] {
-    background-color: #f9f9f9;
+/* Datum‑format – lille grå tekst */
+.time[b-l88pge3v45] {
+    font-size:.85rem;
+    color:#777;
 }
 
-tr:hover[b-l88pge3v45]
+/* Responsivt – lidt mindre padding på små skærme */
+@media (max-width:480px) {
+    .page[b-l88pge3v45] {
+        margin:1rem;
+        padding:1rem;
+    }
+    h3[b-l88pge3v45] {font-size:1.5rem;}
+    h4[b-l88pge3v45] {font-size:1.2rem;}
+}

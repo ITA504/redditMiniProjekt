@@ -1,23 +1,71 @@
+/* -------------------------------------------------
+   Home (Index) – oversigt over indlæg
+   ------------------------------------------------- */
+
+/* Overordnet container – centreret “card” */
+.page[b-z2i60dbbks] {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Titel */
+h3[b-z2i60dbbks] {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #222;
+}
+
+/* Loading‑tekst */
+.loading[b-z2i60dbbks] {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Tabel – simpel men elegant */
 table[b-z2i60dbbks] {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    margin-top: .5rem;
 }
-
 th[b-z2i60dbbks], td[b-z2i60dbbks] {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
     text-align: left;
+    vertical-align: top;
 }
-
 th[b-z2i60dbbks] {
-    background-color: #4CAF50;
-    color: white;
+    background: #f0f0f0;
+    font-weight: 600;
+    color: #333;
+}
+td a[b-z2i60dbbks] {
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+td a:hover[b-z2i60dbbks] {
+    text-decoration: underline;
 }
 
-tr:nth-child(even)[b-z2i60dbbks] {
-    background-color: #f9f9f9;
+/* Dato‑format – lille grå tekst */
+.date[b-z2i60dbbks] {
+    font-size: .9rem;
+    color: #777;
 }
 
-tr:hover[b-z2i60dbbks]
+/* Responsivt – lidt mindre padding på små skærme */
+@media (max-width: 480px) {
+    .page[b-z2i60dbbks] {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h3[b-z2i60dbbks] {font-size: 1.5rem;}
+}
